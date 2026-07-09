@@ -7,54 +7,58 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <div id="header">
-        <input type="search" name="search" id="main-search">
-        <button type="button" class="header-button" id="notifications" aria-label="Delete item"></button>
-        <button type="button" class="header-button" id="user-menu" aria-label="Delete item"></button>
-
-
-    </div>
-    <div id="sidebar">
-        <h2 class="sidebar-title">Dashboard</h2>
-        <div class="buttons-one">
-            <button type="button" class="sidebar-buttons">Home</button>
-            <button type="button" class="sidebar-buttons">Profile</button>
-            <button type="button" class="sidebar-buttons">Messages</button>
-            <button type="button" class="sidebar-buttons">History</button>
-            <button type="button" class="sidebar-buttons">Tasks</button>
-            <button type="button" class="sidebar-buttons">Communities</button>
+    <div id="container">
+        <div id="header">
+            <input type="search" name="search" id="main-search">
+            <button type="button" class="header-button" id="notifications" aria-label="Delete item"></button>
+            <button type="button" class="header-button" id="user-menu" aria-label="Delete item"></button>
         </div>
-        <div class="buttons-two">
-            <button type="button" class="sidebar-buttons">Settings</button>
-            <button type="button" class="sidebar-buttons">Support</button>
-            <button type="button" class="sidebar-buttons">Privacy</button>
-        </div>
-    </div>
-    <div id="main-content">
-        <div id="projects-container">
-            <h3 class="projects-title">Your Projects</h3>
-            <div id="projects">
-                <div class="project-box">January</div>
-                <div class="project-box">February</div>
-                <div class="project-box">March</div>
-                <div class="project-box">April</div>
-                <div class="project-box">May</div>
-                <div class="project-box">June</div>
+        <div id="sidebar">
+            <h2 class="sidebar-title">Dashboard</h2>
+            <div class="buttons-one">
+                <button type="button" class="sidebar-buttons">Home</button>
+                <button type="button" class="sidebar-buttons">Profile</button>
+                <button type="button" class="sidebar-buttons">Messages</button>
+                <button type="button" class="sidebar-buttons">History</button>
+                <button type="button" class="sidebar-buttons">Tasks</button>
+                <button type="button" class="sidebar-buttons">Communities</button>
+            </div>
+            <div class="buttons-two">
+                <button type="button" class="sidebar-buttons">Settings</button>
+                <button type="button" class="sidebar-buttons">Support</button>
+                <button type="button" class="sidebar-buttons">Privacy</button>
             </div>
         </div>
-        <div id="right-side-container">
-            <div id="announcements">
-                <h3 class="announcements-title">Announcements</h3>
-                <div class="announcement">Site Maintenance</div>
-                <div class="announcement">Community Share Day</div>
-                <div class="announcement">Privacy Policy Update</div>
+        <div id="main-content">
+            <div id="projects-container">
+                <h3 class="projects-title">Your Projects</h3>
+                <div id="projects">
+                    <div class="project-box">January</div>
+                    <div class="project-box">February</div>
+                    <div class="project-box">March</div>
+                    <div class="project-box">April</div>
+                    <div class="project-box">May</div>
+                    <div class="project-box">June</div>
+                </div>
             </div>
-            <div id="trending">
-                <h3 class="trending-title">Trending</h3>
-                <div class="trending-user">Harry</div>
-                <div class="trending-user">Ron</div>
-                <div class="trending-user">Hermione</div>
-                <div class="trending-user">Ginny</div>
+            <div id="right-side-container">
+                <div id="announcements">
+                    <h3 class="announcements-title">Announcements</h3>
+                    <div class="right-side-box">
+                        <div class="announcement">Site Maintenance</div>
+                        <div class="announcement">Community Share Day</div>
+                        <div class="announcement">Privacy Policy Update</div>
+                    </div>
+                </div>
+                <div id="trending">
+                    <h3 class="trending-title">Trending</h3>
+                    <div class="right-side-box">
+                        <div class="trending-user">Harry</div>
+                        <div class="trending-user">Ron</div>
+                        <div class="trending-user">Hermione</div>
+                        <div class="trending-user">Ginny</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
