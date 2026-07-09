@@ -25,6 +25,17 @@ button {
     color: #D8EDF8;
 }
 
+.sidebar-button-icon {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
 .sidebar-title {
     grid-row: 1 / 2;
 }
