@@ -93,6 +93,19 @@ button {
     grid-row: 2 / 3;
 }
 
+.trending-user { 
+    padding: 20px;
+}
+
+.trending-user-icon {
+    width: 50px;
+    height: auto;
+}
+
+.trending-user-profile {
+    display: flex;
+}
+
 .projects-title {
     grid-row: 1 / 2;
 }
