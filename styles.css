@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 button {
@@ -53,7 +53,80 @@ button {
 }
 
 #header {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-header {
     grid-column: 2 / 3;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-right-buttons-container {
+    display: flex;
+    gap: 25px;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 550px;
+  border-radius: 20px;
+  background-color: #E2E8F0;
+  border: #E2E8F0 solid 1px;
+}
+
+.lower-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-header-profile-container {
+    display: flex;
+    padding-left: 15px;
+    gap: 15px;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.username {
+    font-size: 30px;
+}
+
+.lower-header-profile-icon {
+    height: 70px;
+    width: auto;
+}
+
+.lower-level-buttons-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.lower-level-button {
+    width: 50px;
+    height: 20px;
+    background-color: #1992D4;
+    color: #F9FCFE;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
 }
 
 #main-content {
@@ -67,6 +140,7 @@ button {
 #projects-container {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 #projects {
@@ -80,17 +154,32 @@ button {
 #announcements {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement {
+    padding: 10px 5px 10px 5px;
+}
+
+.announcement:not(:last-child),
+.trending-user-profile:not(:last-child) {
+    border-bottom: #E2E8F0 2px solid;
 }
 
 .right-side-box {
     background-color: #ffffff;
     width: 150px;
     padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    padding-bottom: 50px;
 }
 
 .trending-user { 
@@ -116,10 +205,18 @@ button {
     border-left: 10px solid #F0B631;    
     border-radius: 5px;
     background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #right-side-container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+}
+
+.header-button-icon {
+    height: 30px;
+    width: auto;
 }

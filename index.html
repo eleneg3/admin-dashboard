@@ -9,9 +9,34 @@
 <body>
     <div id="container">
         <div id="header">
-            <input type="search" name="search" id="main-search">
-            <button type="button" class="header-button" id="notifications" aria-label="Delete item"></button>
-            <button type="button" class="header-button" id="user-menu" aria-label="Delete item"></button>
+            <div class="upper-header">
+                <div class="search-container">
+                    <img src="./icons/magnify.svg" alt="magnifying-glass-icon" class="header-button-icon">
+                    <input type="search" name="search" id="main-search">
+                </div>
+                <div class="header-right-buttons-container">
+                    <button type="button" class="header-button" id="notifications" >
+                        <img src="./icons/bell-badge-outline.svg" alt="notifications-icon" class="header-button-icon">
+                    </button>
+                    <button type="button" class="header-button" id="user-menu" aria-label="Delete item">
+                        <img src="./icons/profile-icon-8164738-512.png" alt="profile-pic-icon" class="header-button-icon">
+                    </button>
+                    <p>Professor McGonagall</p>
+                </div>
+            </div>
+            <div class="lower-header">
+                <div class="lower-header-profile-container">
+                    <img src="./icons/profile-icon-8164738-512.png" alt="profile-pic-icon" class="lower-header-profile-icon">
+                    <div class="welcome-message">
+                        <p class="hello-text">Hi there, <br> <span class="username">Professor McGonagall (@minerva)</span></p>
+                    </div>
+                </div>
+                <div class="lower-level-buttons-container">
+                    <button type="button" class="lower-level-button" id="new">New</button>
+                    <button type="button" class="lower-level-button" id="upload">Upload</button>
+                    <button type="button" class="lower-level-button" id="share">Share</button>
+                </div>
+            </div>
         </div>
         <div id="sidebar">
             <h2 class="sidebar-title">Dashboard</h2>
