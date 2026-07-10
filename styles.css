@@ -25,14 +25,26 @@ button {
     color: #D8EDF8;
 }
 
+.sidebar-title-container {
+    display: flex;
+    padding-top: 20px;
+}
+
 .sidebar-button-icon {
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 
 .sidebar-icon {
     width: 20px;
     height: 20px;
+    padding: 10px;
+}
+
+.sidebar-icon-dashboard {
+    width: 40px;
+    height: 40px;
     padding: 10px;
 }
 
